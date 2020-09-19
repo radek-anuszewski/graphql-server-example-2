@@ -1,0 +1,32 @@
+mutation {
+  createOwner(owner: {name: "R"}) {
+    id,
+    name,
+  }
+}
+
+query {
+  owners {
+    name
+  }
+}
+
+query {
+  animals {
+    name,
+    nicknames
+  }
+}
+
+query {
+  owner(id: 2) {
+    name
+  }
+}
+
+query {
+  animal(name: "Burek") {
+    name
+    birthPlace
+  }
+}
